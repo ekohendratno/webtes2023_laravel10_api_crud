@@ -288,3 +288,130 @@ Output:
 }
 
 ```
+
+
+# /api/kontrak
+
+POST /api/kontrak
+Input:
+```
+{
+  id_pegawai: Integer,
+  kontrak: String,
+  gaji: Integer,
+}
+
+```
+
+Output:
+```
+{
+    "success":true,
+    "message":"Data Berhasil Ditambah!",
+    "data":{...}
+}
+```
+
+GET /api/kontrak
+
+Output:
+```
+{
+  "success": true,
+  "message": "List Data",
+  "data": {
+    "current_page": 1,
+    "data": [
+      {
+        "kontrak_id": 1,
+        "pegawai_id": 1,
+        "kontrak_tanggal_mulai": "2022-01-01",
+        "kontrak_tanggal_selesai": "2022-12-31",
+        "created_at": null,
+        "updated_at": null,
+        "pegawai_nama": "John Doe",
+        "pegawai_alamat": "Jl. Sudirman No. 123",
+        "pegawai_tanggal_lahir": "1990-01-01"
+      },
+      ...
+    ],
+    "first_page_url": "http://127.0.0.1:8000/api/kontrak?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http://127.0.0.1:8000/api/kontrak?page=1",
+    "links": [
+      {
+        "url": null,
+        "label": "&laquo; Previous",
+        "active": false
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/kontrak?page=1",
+        "label": "1",
+        "active": true
+      },
+      {
+        "url": null,
+        "label": "Next &raquo;",
+        "active": false
+      }
+    ],
+    "next_page_url": null,
+    "path": "http://127.0.0.1:8000/api/kontrak",
+    "per_page": 10,
+    "prev_page_url": null,
+    "to": 4,
+    "total": 4
+  }
+}
+```
+
+GET /api/kontrak/{kontrak_id}
+
+Output:
+```
+{
+  "success": true,
+  "message": "Detail Data!",
+  "data": {
+    "kontrak_id": 1,
+    "pegawai_id": 1,
+    "kontrak_tanggal_mulai": "2022-01-01",
+    "kontrak_tanggal_selesai": "2022-12-31",
+    "created_at": null,
+    "updated_at": null
+  }
+}
+```
+
+PUT /api/kontrak/{kontrak_id}
+
+Input:
+```
+{
+  id_pegawai: Integer,
+  tanggal_mulai: Date,
+  tanggal_selesai: Date,
+}
+
+```
+
+Output:
+```
+{
+    "success":true,
+    "message":"Data Berhasil Diubah!",
+    "data":{...}
+}
+```
+
+DELETE /api/kontrak/{kontrak_id}
+
+Output:
+```
+{
+    "success":true,
+    "message":"Data Berhasil Dihapus!"
+}
+
+```

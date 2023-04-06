@@ -418,3 +418,12 @@ Output:
 }
 
 ```
+
+
+
+Screenshot
+
+<img src="https://raw.githubusercontent.com/ekohendratno/webtes2023_laravel10_api_crud/main/screenshot/sc0.png" width="23%"></img> 
+<img src="https://raw.githubusercontent.com/ekohendratno/webtes2023_laravel10_api_crud/main/screenshot/sc1.png" width="23%"></img> 
+<img src="https://raw.githubusercontent.com/ekohendratno/webtes2023_laravel10_api_crud/main/screenshot/sc2.png" width="23%"></img> 
+<img src="https://raw.githubusercontent.com/ekohendratno/webtes2023_laravel10_api_crud/main/screenshot/sc3.png" width="23%"></img> 

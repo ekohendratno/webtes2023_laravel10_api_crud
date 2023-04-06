@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::apiResource('/api/pegawai', App\Http\Controllers\Api\PegawaiController::class);

@@ -166,6 +166,7 @@ Output:
 # /api/jabatan
 
 POST /api/jabatan
+
 Input:
 ```
 {
@@ -293,6 +294,7 @@ Output:
 # /api/kontrak
 
 POST /api/kontrak
+
 Input:
 ```
 {

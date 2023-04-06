@@ -32,13 +32,13 @@ Route::get('/', function () {
 
 
 Route::get('/pegawai', function () {
-    return view('pegawai.index');
+    return view('pegawai');
 });
 Route::get('/kontrak', function () {
-    return view('pegawai.kontrak');
+    return view('kontrak');
 });
 Route::get('/jabatan', function () {
-    return view('pegawai.jabatan');
+    return view('jabatan');
 });
 
 //backend

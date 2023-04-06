@@ -19,3 +19,5 @@ Route::get('/', function () {
 
 
 Route::apiResource('/api/pegawai', App\Http\Controllers\Api\PegawaiController::class);
+Route::apiResource('/api/jabatan', App\Http\Controllers\Api\JabatanController::class);
+

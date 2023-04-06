@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Models\Pegawai;
+use App\Models\JabatanPegawai;
+use App\Models\Kontrak;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +16,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//frontend
+
 Route::get('/', function () {
-    return view('welcome');
+
+    $jumlah_pegawai = Pegawai::count();
+    $jumlah_jabatan = JabatanPegawai::count();
+    $jumlah_kontrak = Kontrak::count();
+    return view('dashboard', [
+        'jumlah_pegawai' => $jumlah_pegawai,
+        'jumlah_jabatan' => $jumlah_jabatan,
+        'jumlah_kontrak' => $jumlah_kontrak,
+    ]);
 });
 
+
+Route::get('/pegawai', function () {
+    return view('pegawai.index');
+});
+Route::get('/kontrak', function () {
+    return view('pegawai.kontrak');
+});
+Route::get('/jabatan', function () {
+    return view('pegawai.jabatan');
+});
+
+//backend
 
 Route::apiResource('/api/pegawai', App\Http\Controllers\Api\PegawaiController::class);
 Route::apiResource('/api/jabatan', App\Http\Controllers\Api\JabatanController::class);

@@ -10,6 +10,7 @@ Requirment
 Step Instalation
 <ul>
 <li>Clone "git clone https://github.com/ekohendratno/webtes2023_laravel10_api_crud.git"</li>
+<li>cd laravel</li>
 <li>Copy .env.example to .env</li>
 <li>Config your data .env host,user,pass and dbname
 <p>

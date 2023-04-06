@@ -423,7 +423,7 @@ Output:
 
 Screenshot
 
-<img src="https://raw.githubusercontent.com/ekohendratno/webtes2023_laravel10_api_crud/main/screenshot/img0.jpg" width="23%"></img> 
-<img src="https://raw.githubusercontent.com/ekohendratno/webtes2023_laravel10_api_crud/main/screenshot/img1.jpg" width="23%"></img> 
-<img src="https://raw.githubusercontent.com/ekohendratno/webtes2023_laravel10_api_crud/main/screenshot/img2.jpg" width="23%"></img> 
-<img src="https://raw.githubusercontent.com/ekohendratno/webtes2023_laravel10_api_crud/main/screenshot/img3.jpg" width="23%"></img> 
+<img src="https://raw.githubusercontent.com/ekohendratno/webtes2023_laravel10_api_crud/main/screenshot/sc0.png" width="23%"></img> 
+<img src="https://raw.githubusercontent.com/ekohendratno/webtes2023_laravel10_api_crud/main/screenshot/sc1.jpg" width="23%"></img> 
+<img src="https://raw.githubusercontent.com/ekohendratno/webtes2023_laravel10_api_crud/main/screenshot/sc2.jpg" width="23%"></img> 
+<img src="https://raw.githubusercontent.com/ekohendratno/webtes2023_laravel10_api_crud/main/screenshot/sc3.jpg" width="23%"></img> 

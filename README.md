@@ -151,6 +151,8 @@ Output:
 
 DELETE /api/pegawai/{pegawai_id}
 
+
+Output:
 ```
 {
     "success":true,

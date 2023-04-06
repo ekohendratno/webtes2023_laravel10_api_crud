@@ -28,3 +28,133 @@ DB_PASSWORD=
 <li>php artisan serve</li>
 <li>open browser http://localhost:8000</li>
 </ul>
+
+Keterangan API
+
+# /api/pegawai
+
+GET /api/pegawai
+
+Output:
+
+```
+
+{
+  "success": true,
+  "message": "List Data",
+  "data": {
+    "current_page": 1,
+    "data": [
+      {
+        "pegawai_id": 1,
+        "pegawai_nama": "John Doe",
+        "pegawai_alamat": "Jl. Sudirman No. 123",
+        "pegawai_tanggal_lahir": "1990-01-01",
+        "created_at": null,
+        "updated_at": null
+      },
+      ....
+    ],
+    "first_page_url": "http://127.0.0.1:8000/api/pegawai?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http://127.0.0.1:8000/api/pegawai?page=1",
+    "links": [
+      {
+        "url": null,
+        "label": "&laquo; Previous",
+        "active": false
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/pegawai?page=1",
+        "label": "1",
+        "active": true
+      },
+      {
+        "url": null,
+        "label": "Next &raquo;",
+        "active": false
+      }
+    ],
+    "next_page_url": null,
+    "path": "http://127.0.0.1:8000/api/pegawai",
+    "per_page": 10,
+    "prev_page_url": null,
+    "to": 4,
+    "total": 4
+  }
+}
+
+```
+
+POST /api/pegawai
+
+Input:
+```
+{
+  nama: String,
+  alamat: String,
+  tanggal_lahir: Date,
+}
+
+```
+
+Output:
+
+```
+{
+    "success":true,
+    "message":"Data Berhasil Ditambah!",
+    "data":{...}
+}
+```
+
+GET /api/pegawai/{pegawai_id}
+
+Output:
+```
+{
+  "success": true,
+  "message": "Detail Data!",
+  "data": {
+    "pegawai_id": 1,
+    "pegawai_nama": "John Doe",
+    "pegawai_alamat": "Jl. Sudirman No. 123",
+    "pegawai_tanggal_lahir": "1990-01-01",
+    "created_at": null,
+    "updated_at": null
+  }
+}
+
+```
+
+PUT /api/pegawai/{pegawai_id}
+
+Input:
+```
+{
+  nama: String,
+  alamat: String,
+  tanggal_lahir: Date,
+}
+
+```
+
+Output:
+```
+{
+    "success":true,
+    "message":"Data Berhasil Diubah!",
+    "data":{...}
+}
+```
+
+DELETE /api/pegawai/{pegawai_id}
+
+```
+{
+    "success":true,
+    "message":"Data Berhasil Dihapus!"
+}
+
+```
